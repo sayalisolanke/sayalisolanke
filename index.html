@@ -1,734 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sayali Solanke | Chemistry × Biology</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayali Solanke</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<!-- style.css is your design file. extra.css only adds touch effects and tabs. Keep both. -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="extra.css">
 </head>
-
 <body>
 
-<!-- =========================
-     HERO
-========================= -->
-
-<header class="hero">
-
-    <div class="hero-content">
-
-        <img
-            src="images/photo.1.jpeg"
-            alt="Sayali Solanke"
-            class="profile-photo"
-        >
-
-        <p class="eyebrow">
-            CHEMISTRY × BIOLOGY
-        </p>
-
-        <h1>
-            Sayali<br>
-            <span>Solanke.</span>
-        </h1>
-
-        <p class="intro">
-            BS-MS student at IISER Thiruvananthapuram,
-            exploring the interface between chemistry and biology.
-        </p>
-
+<nav>
+  <div class="nav-inner">
+    <a href="#top" class="logo">Sayali<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cv">Contact</a>
     </div>
-
-</header>
-
-
-<!-- =========================
-     NAVIGATION
-========================= -->
-
-<nav class="tabs">
-
-    <button class="tab active" data-section="about">
-        About
-    </button>
-
-    <button class="tab" data-section="education">
-        Education
-    </button>
-
-    <button class="tab" data-section="research">
-        Research
-    </button>
-
-    <button class="tab" data-section="publications">
-        Publications & Awards
-    </button>
-
-    <button class="tab" data-section="skills">
-        Skills
-    </button>
-
-    <button class="tab" data-section="beyond">
-        Beyond Lab
-    </button>
-
-    <button class="tab" data-section="travel">
-        ✈️ Travel
-    </button>
-
-    <button class="tab" data-section="blogs">
-        📝 Blogs
-    </button>
-
-    <button class="tab" data-section="contact">
-        Contact & CV
-    </button>
-
+  </div>
 </nav>
 
+<header class="hero" id="top">
+  <div class="hero-inner">
 
-<!-- =========================
-     CONTENT
-========================= -->
+    <div class="hero-content">
+      <p class="eyebrow">Chemistry and Biology</p>
+      <h1 class="hero-name">Sayali Solanke</h1>
+      <p class="subtitle">BS MS student at IISER Thiruvananthapuram. Major in Chemistry, minor in Biology.</p>
 
-<main class="content">
+      <div class="intro-card">
+        I work in organic and inorganic chemistry labs and use NMR to study biological samples. I like using chemistry to answer questions about cells, seeds and disease.
+      </div>
 
+      <div class="hero-buttons">
+        <a href="#research" class="btn primary">See my research</a>
+        <a href="mailto:sayalisolanke@gmail.com" class="btn">Email me</a>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card"><span>INSTITUTE</span><p>IISER Thiruvananthapuram</p></div>
+        <div class="info-card"><span>DEGREE</span><p>BS MS, 2022 to 2027</p></div>
+        <div class="info-card"><span>NOW</span><p>NacNac ligand chemistry</p></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="photo-card">
+        <img src="images/photo.1.jpeg" alt="Sayali Solanke">
+      </div>
+      <p class="photo-caption">Sayali Solanke</p>
+      <div class="tags">
+        <span class="tag">Organic</span>
+        <span class="tag teal">Inorganic</span>
+        <span class="tag yellow">NMR</span>
+        <span class="tag">Biology</span>
+      </div>
+    </div>
+
+  </div>
+</header>
 
 <!-- ABOUT -->
-
-<section id="about" class="tab-section active-section">
-
-    <p class="section-number">
-        01 / ABOUT
-    </p>
-
-    <h2>
-        A chemistry student
-        curious about biology.
-    </h2>
-
-    <p class="large-text">
-        I am currently pursuing a BS-MS Integrated Dual Degree
-        at IISER Thiruvananthapuram, with Chemistry as my major
-        and Biology as my minor.
-    </p>
-
-    <p class="body-text">
-        My research experience has taken me through organic synthesis,
-        molecular characterization, materials chemistry, NMR-based
-        biological research, and metal-complex chemistry.
-    </p>
-
-    <p class="body-text">
-        I am particularly interested in the chemistry–biology interface
-        and in understanding biological problems at the molecular level.
-        My current interests include chemical biology, disease biology,
-        cancer-cell adaptation, therapeutic resistance, and biomedical research.
-    </p>
-
+<section id="about" class="content-section">
+  <div class="section-container">
+    <p class="label">About</p>
+    <h2>About me</h2>
+    <p class="text">I am a BS MS student at the Indian Institute of Science Education and Research (IISER) Thiruvananthapuram. My major is Chemistry and my minor is Biology.</p>
+    <p class="text" style="margin-top:20px">My lab work covers organic and inorganic chemistry, NMR studies of biological samples, and coordination chemistry. I like using chemistry to understand biological systems and disease.</p>
+    <!-- ADD MORE ABOUT TEXT: copy a <p class="text"> line -->
+  </div>
 </section>
-
 
 <!-- EDUCATION -->
+<section id="education" class="content-section">
+  <div class="section-container">
+    <p class="label">Education</p>
+    <h2>Education</h2>
+    <div class="project-list">
 
-<section id="education" class="tab-section">
+      <div class="project">
+        <p class="project-year">2022 to 2027</p>
+        <h3>IISER Thiruvananthapuram</h3>
+        <p>BS MS dual degree. Major in Chemistry, minor in Biology.</p>
+      </div>
 
-    <p class="section-number">
-        02 / EDUCATION
-    </p>
+      <div class="project">
+        <p class="project-year">2019 to 2021</p>
+        <h3>Keshawraj Junior College, Latur, Maharashtra</h3>
+        <p>Higher secondary education.</p>
+      </div>
 
-    <h2>
-        Education
-    </h2>
-
-    <div class="card-grid">
-
-        <article class="card">
-
-            <span class="date">
-                2022 — 2027
-            </span>
-
-            <h3>
-                Indian Institute of Science Education
-                and Research, Thiruvananthapuram
-            </h3>
-
-            <p class="degree">
-                BS-MS Integrated Dual Degree
-            </p>
-
-            <ul>
-                <li>Chemistry Major</li>
-                <li>Biology Minor</li>
-                <li>Current: 5th Year</li>
-            </ul>
-
-        </article>
-
-
-        <article class="card">
-
-            <span class="date">
-                2019 — 2021
-            </span>
-
-            <h3>
-                Keshawraj Junior College
-            </h3>
-
-            <p class="degree">
-                Higher Secondary Education
-            </p>
-
-            <p>
-                Latur, Maharashtra
-            </p>
-
-        </article>
-
+      <!-- ADD MORE: copy one <div class="project"> block -->
     </div>
-
+  </div>
 </section>
 
-
-<!-- RESEARCH -->
-
-<section id="research" class="tab-section">
-
-    <p class="section-number">
-        03 / RESEARCH
-    </p>
-
-    <h2>
-        Research
-        experience.
-    </h2>
-
-
-    <!-- CURRENT PROJECT -->
-
-    <article class="research-card">
-
-        <div class="research-header">
-
-            <span class="date">
-                2026 — PRESENT
-            </span>
-
-            <span class="tag">
-                CURRENT PROJECT
-            </span>
-
-        </div>
-
-        <h3>
-            NacNac Ligand & Metal Complex Chemistry
-        </h3>
-
-        <p>
-            Current BS-MS major research project involving the
-            synthesis of NacNac (β-diketiminate) derivative ligands
-            and their use in the synthesis and study of metal complexes.
-        </p>
-
-        <ul>
-
-            <li>
-                Synthesis of NacNac derivative ligands.
-            </li>
-
-            <li>
-                Synthesis of metal complexes using different
-                NacNac-derived ligands.
-            </li>
-
-            <li>
-                Exploring ligand coordination and reactivity
-                in metal-complex chemistry.
-            </li>
-
-        </ul>
-
-    </article>
-
-
-    <!-- TOPOCHEMICAL PROJECT -->
-
-    <article class="research-card">
-
-        <div class="research-header">
-
-            <span class="date">
-                AUG 2024 — AUG 2026
-            </span>
-
-        </div>
-
-        <h3>
-            Topochemical Polymerization
-        </h3>
-
-        <p>
-            Research involving the synthesis and characterization
-            of functional monomers for topochemical chemistry.
-        </p>
-
-        <ul>
-
-            <li>
-                Amide coupling, Boc deprotection,
-                esterification and acylation.
-            </li>
-
-            <li>
-                Purification using chromatographic techniques.
-            </li>
-
-            <li>
-                NMR spectroscopy and mass spectrometry.
-            </li>
-
-            <li>
-                PXRD, DSC and TGA characterization.
-            </li>
-
-            <li>
-                Studying relationships between molecular structure,
-                crystal packing and polymerization behaviour.
-            </li>
-
-        </ul>
-
-    </article>
-
-
-    <!-- SEED AND STARCH -->
-
-    <article class="research-card">
-
-        <div class="research-header">
-
-            <span class="date">
-                2025 — 2026
-            </span>
-
-        </div>
-
-        <h3>
-            Seed & Starch Biology
-        </h3>
-
-        <p>
-            NMR-based characterization of starch-derived metabolites
-            and molecular changes associated with seed aging.
-        </p>
-
-        <ul>
-
-            <li>
-                Solid-state CP/MAS NMR spectroscopy.
-            </li>
-
-            <li>
-                Solution-state ¹H NMR analysis.
-            </li>
-
-            <li>
-                Rice seed systems including wild-type,
-                OsPIMT1 and OsPIMT2 lines.
-            </li>
-
-            <li>
-                Comparison of metabolite profiles under
-                control and aging conditions.
-            </li>
-
-            <li>
-                Sample preparation, spectral acquisition
-                and interpretation.
-            </li>
-
-        </ul>
-
-    </article>
-
-
-    <!-- COMPUTATIONAL PROJECT -->
-
-    <article class="research-card">
-
-        <div class="research-header">
-
-            <span class="date">
-                DEC 2025
-            </span>
-
-        </div>
-
-        <h3>
-            Computational Materials Physics
-        </h3>
-
-        <p>
-            Winter research project involving coursework and
-            basic theoretical analysis of electronic and structural
-            properties of solids.
-        </p>
-
-    </article>
-
-
-    <!-- PARASITOLOGY -->
-
-    <article class="research-card">
-
-        <div class="research-header">
-
-            <span class="date">
-                JUN — JUL 2024
-            </span>
-
-        </div>
-
-        <h3>
-            Parasitology
-        </h3>
-
-        <p>
-            Summer research internship involving the study of
-            parasitic organisms using microscopy-based approaches.
-        </p>
-
-        <ul>
-
-            <li>
-                Cestodes from sheep.
-            </li>
-
-            <li>
-                Nematodes from fish.
-            </li>
-
-            <li>
-                Dissection, staining and microscopy.
-            </li>
-
-            <li>
-                Basic pathology assessment.
-            </li>
-
-        </ul>
-
-    </article>
-
-</section>
-
-
-<!-- PUBLICATIONS -->
-
-<section id="publications" class="tab-section">
-
-    <p class="section-number">
-        04 / PUBLICATIONS & AWARDS
-    </p>
-
-    <h2>
-        Publications &
-        awards.
-    </h2>
-
-    <div class="empty-card">
-
-        <h3>
-            Research publications
-        </h3>
-
-        <p>
-            This section will be updated with publications,
-            conference presentations and research outputs.
-        </p>
-
+<!-- RESEARCH (tap a project to open it) -->
+<section id="research" class="content-section">
+  <div class="section-container">
+    <p class="label">Research</p>
+    <h2>Research</h2>
+    <div class="project-list">
+
+      <div class="project open">
+        <button class="project-head"><span><small class="project-year">2026 to now</small><h3>NacNac ligand chemistry</h3></span><i></i></button>
+        <div class="project-body"><div>
+          <p>I make beta diketiminate (NacNac) ligands and study how they bind to main group and transition metals.</p>
+          <p>Right now I am working on synthesising the ligands, characterising them, and understanding how the NacNac frameworks coordinate.</p>
+          <!-- ADD MORE DETAILS for this project: copy a <p> line -->
+        </div></div>
+      </div>
+
+      <div class="project">
+        <button class="project-head"><span><small class="project-year">2025 to 2026</small><h3>Seed and starch biology</h3></span><i></i></button>
+        <div class="project-body"><div>
+          <p>I used NMR to characterise starch and metabolites in seeds.</p>
+          <p>I worked with rice seeds, using solution state and solid state NMR to compare metabolite profiles in control and aged seeds, and to see how the structure of starch changes.</p>
+        </div></div>
+      </div>
+
+      <div class="project">
+        <button class="project-head"><span><small class="project-year">2024 to 2026</small><h3>Topochemical chemistry</h3></span><i></i></button>
+        <div class="project-body"><div>
+          <p>I made and characterised functional monomers for topochemical and Diels Alder reactions.</p>
+          <p>The work covered organic synthesis, purification, setting up reactions, and characterisation by NMR, PXRD, DSC, TGA, IR, UV and MALDI MS.</p>
+        </div></div>
+      </div>
+
+      <!-- ADD A NEW PROJECT: copy one <div class="project"> block above -->
     </div>
-
-
-    <div class="empty-card">
-
-        <h3>
-            Awards & achievements
-        </h3>
-
-        <p>
-            Academic achievements, scholarships and awards
-            can be added here.
-        </p>
-
-    </div>
-
+  </div>
 </section>
-
 
 <!-- SKILLS -->
-
-<section id="skills" class="tab-section">
-
-    <p class="section-number">
-        05 / SKILLS
-    </p>
-
-    <h2>
-        Things I
-        work with.
-    </h2>
-
-    <div class="skill-grid">
-
-
-        <div class="skill-card">
-
-            <h3>
-                Experimental
-            </h3>
-
-            <div class="skill-list">
-
-                <span>Organic synthesis</span>
-                <span>NMR spectroscopy</span>
-                <span>UV-Vis</span>
-                <span>IR spectroscopy</span>
-                <span>X-ray diffraction</span>
-                <span>PXRD</span>
-                <span>DSC</span>
-                <span>TGA</span>
-                <span>Cyclic voltammetry</span>
-                <span>Polarimetry</span>
-                <span>Conductometry</span>
-                <span>Plant DNA extraction</span>
-                <span>Gel electrophoresis</span>
-                <span>Basic cell culture</span>
-
-            </div>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <h3>
-                Software
-            </h3>
-
-            <div class="skill-list">
-
-                <span>TopSpin</span>
-                <span>ChemDraw</span>
-                <span>OriginPro</span>
-                <span>Mercury</span>
-                <span>CCDC</span>
-
-            </div>
-
-        </div>
-
+<section id="skills" class="content-section">
+  <div class="section-container">
+    <p class="label">Skills</p>
+    <h2>Lab skills</h2>
+    <div class="tags left">
+      <span class="tag">Organic synthesis</span>
+      <span class="tag">Inorganic chemistry</span>
+      <span class="tag">Coordination chemistry</span>
+      <span class="tag">NacNac ligands</span>
+      <span class="tag">Reaction setup</span>
+      <span class="tag">Purification</span>
+      <span class="tag">TLC</span>
+      <span class="tag">Column chromatography</span>
+      <span class="tag teal">NMR</span>
+      <span class="tag teal">CP/MAS NMR</span>
+      <span class="tag yellow">PXRD</span>
+      <span class="tag yellow">DSC and TGA</span>
+      <span class="tag yellow">MALDI MS</span>
+      <!-- ADD MORE: <span class="tag">New skill</span> -->
     </div>
-
+  </div>
 </section>
-
-
-<!-- BEYOND LAB -->
-
-<section id="beyond" class="tab-section">
-
-    <p class="section-number">
-        06 / BEYOND LAB
-    </p>
-
-    <h2>
-        More than
-        research.
-    </h2>
-
-    <div class="card-grid">
-
-
-        <div class="card">
-
-            <h3>
-                Learning
-            </h3>
-
-            <p>
-                Curious about new areas at the intersection
-                of chemistry, biology and biomedical science.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>
-                Science
-            </h3>
-
-            <p>
-                I enjoy reading research papers and learning
-                how molecular mechanisms connect to biological
-                phenomena.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>
-                Exploring
-            </h3>
-
-            <p>
-                This space will gradually include interests,
-                experiences and things I discover outside the lab.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- TRAVEL -->
-
-<section id="travel" class="tab-section">
-
-    <p class="section-number">
-        07 / TRAVEL
-    </p>
-
-    <h2>
-        Places I've
-        explored.
-    </h2>
-
-    <div class="empty-card">
-
-        <h3>
-            Travel journal
-        </h3>
-
-        <p>
-            Travel stories, photographs and places will be
-            added here.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- BLOGS -->
-
-<section id="blogs" class="tab-section">
-
-    <p class="section-number">
-        08 / BLOGS
-    </p>
-
-    <h2>
-        Notes,
-        thoughts & science.
-    </h2>
-
-    <div class="empty-card">
-
-        <h3>
-            Coming soon
-        </h3>
-
-        <p>
-            I'll use this space for research notes,
-            interesting papers, scientific ideas and
-            things I'm learning.
-        </p>
-
-    </div>
-
-</section>
-
 
 <!-- CONTACT -->
-
-<section id="contact" class="tab-section">
-
-    <p class="section-number">
-        09 / CONTACT
-    </p>
-
-    <h2>
-        Let's
-        connect.
-    </h2>
-
-    <p class="large-text">
-        I'm interested in research conversations,
-        chemistry–biology projects, PhD opportunities
-        and interesting scientific ideas.
-    </p>
-
-    <div class="contact-buttons">
-
-        <a
-            href="mailto:YOUR_EMAIL@example.com"
-            class="contact-button"
-        >
-            ✉ Email
-        </a>
-
-        <a
-            href="https://www.linkedin.com/in/YOUR-LINKEDIN/"
-            target="_blank"
-            class="contact-button"
-        >
-            LinkedIn ↗
-        </a>
-
-        <a
-            href="CV.pdf"
-            target="_blank"
-            class="contact-button"
-        >
-            CV ↓
-        </a>
-
+<section id="contact" class="contact-section">
+  <div class="section-container">
+    <p class="label">Contact</p>
+    <h2>Get in touch</h2>
+    <p class="text">I am looking for research positions where chemistry is used to study biology and medicine. Write to me if you have one.</p>
+    <a href="mailto:sayalisolanke@gmail.com" class="email">sayalisolanke@gmail.com <span>→</span></a>
+    <div class="hero-buttons" style="margin-top:32px">
+      <a href="https://www.linkedin.com/in/sayali-solanke-707764255" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+      <a href="https://github.com/sayalisolanke" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
     </div>
-
+  </div>
 </section>
 
-
-</main>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <p>
-        © 2026 Sayali Solanke
-    </p>
-
-    <p>
-        Chemistry × Biology
-    </p>
-
-</footer>
-
+<footer>© 2026 Sayali Solanke. Chemistry and Biology.</footer>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>

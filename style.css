@@ -1,45 +1,191 @@
-/* extra.css: loads after style.css. Adds black name, touch effects and project tabs. */
-.hero-name{color:#000}
-.tags.left{justify-content:flex-start}
+    font-size: 13px;
 
-/* touch effects */
-nav a,.btn,.tag,.info-card,.photo-card,.email{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.nav-links>a:active,.btn:active,.tag:active,.info-card:active,.email:active{transform:scale(.93)}
-.nav-links>a{padding:6px 12px;border-radius:30px}
-.nav-links>a:not(.nav-cv):hover,.nav-links>a:not(.nav-cv):active{background:#f7d9d2;color:#000}
-.btn:hover{background:#f7d9d2}
-.btn.primary:hover{background:#000}
-.tag{transition:transform .15s,background .2s}
-.tag:hover{background:#f7d9d2;transform:translateY(-2px)}
-.info-card{transition:transform .15s,background .2s}
-.info-card:hover{background:#fff;transform:translateY(-2px)}
-.photo-card:active{transform:rotate(0) scale(.98)}
+    font-weight: 700;
 
-/* research tabs */
-.project-head{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:0;cursor:pointer;color:inherit;font:inherit;padding:0;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:padding .25s,transform .15s}
-.project-head:hover{padding-left:12px}
-.project-head:active{transform:scale(.98)}
-.project-head:focus-visible{outline:2px solid #d95e6a;outline-offset:6px}
-.project-head h3{margin:0;transition:color .25s}
-.project.open .project-head h3,.project-head:hover h3{color:#d95e6a}
-.project-head i{flex:none;width:36px;height:36px;border:2px solid #1d2a3a;border-radius:50%;position:relative;transition:transform .35s,background .25s}
-.project-head i::before,.project-head i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:#1d2a3a;transform:translate(-50%,-50%);transition:transform .35s}
-.project-head i::after{transform:translate(-50%,-50%) rotate(90deg)}
-.project.open .project-head i{background:#f7d9d2;transform:rotate(180deg)}
-.project.open .project-head i::after{transform:translate(-50%,-50%) rotate(0)}
-.project-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
-.project.open .project-body{grid-template-rows:1fr}
-.project-body>div{overflow:hidden;min-height:0;opacity:0;transition:opacity .3s}
-.project.open .project-body>div{opacity:1}
-.project-body p{margin-top:14px}
-.project-body p:first-child{margin-top:16px}
+    letter-spacing: 0.4px;
 
-@media (max-width:650px){
-  .hero-name{font-size:clamp(30px,9.5vw,48px);white-space:nowrap}
-  .nav-inner{width:94%}
-  .nav-links{display:flex;gap:2px;width:100%;justify-content:space-between}
-  .nav-links>a{padding:6px 8px;font-size:13px}
-  .nav-cv{padding:9px 14px!important}
-  .logo{display:none}
+    margin-bottom: 23px;
+
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+
+
+/* =====================================================
+   NAME
+===================================================== */
+
+.hero-name {
+
+    font-family: "Playfair Display", serif;
+
+    color: #1d2a3a;
+
+    font-size: clamp(55px, 6.2vw, 82px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+/* =====================================================
+   EDUCATION
+===================================================== */
+
+.subtitle {
+
+    color: #64738b;
+
+    font-size: 18px;
+
+    line-height: 1.55;
+
+    font-weight: 600;
+
+    margin-bottom: 27px;
+
+}
+
+
+
+/* =====================================================
+   INTRO CARD
+===================================================== */
+
+.intro-card {
+
+    max-width: 760px;
+
+    background: rgba(255, 253, 250, 0.88);
+
+    border: 2px solid #1d2a3a;
+
+    border-radius: 23px;
+
+    padding: 24px 26px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    box-shadow: 8px 8px 0 #f2c6bc;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.btn {
+
+    border: 2px solid #1d2a3a;
+
+    padding: 13px 21px;
+
+    border-radius: 40px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    background: rgba(255, 253, 250, 0.75);
+
+    transition: all 0.25s ease;
+
+}
+
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+.btn.primary {
+
+    background: #1d2a3a;
+
+    color: white;
+
+}
+
+
+
+/* =====================================================
+   INFO CARDS
+===================================================== */
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    max-width: 760px;
+
+}
+
+
+.info-card {
+
+    background: rgba(255, 255, 255, 0.68);
+
+    border: 1px solid #ead9d0;
+
+    border-radius: 16px;
+
+    padding: 13px 15px;
+
+}
+
+
+.info-card span {
+
+    display: block;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #738096;
+
+    margin-bottom: 4px;
+
+}
+
+
+.info-card p {
+
+    font-size: 14px;
+
+    line-height: 1.4;

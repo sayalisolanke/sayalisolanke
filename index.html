@@ -410,83 +410,83 @@
 
 </section>
 
-    <!-- =========================
-         SKILLS
-    ========================== -->
-    <section id="skills" class="content-section">
+    
+<!-- =========================
+     SKILLS
+========================== -->
 
-        <div class="section-container">
+<section id="skills" class="content-section">
 
-            <p class="label">
-                SKILLS
-            </p>
+    <div class="section-container">
 
-            <h2>
-                Lab skills
-            </h2>
+        <p class="label">SKILLS</p>
 
-            <div
-                class="tags"
-                style="justify-content:flex-start"
-            >
+        <h2>Skills — click to explore</h2>
 
-                <span class="tag">
-                    Organic synthesis
-                </span>
+        <!-- SKILL TABS -->
+        <div class="skills-tabs">
 
-                <span class="tag">
-                    Inorganic chemistry
-                </span>
+            <button class="skills-tab active"
+                onclick="showSkill('synthesis', this)">
+                Synthesis &amp; Lab Techniques
+            </button>
 
-                <span class="tag">
-                    Coordination chemistry
-                </span>
+            <button class="skills-tab"
+                onclick="showSkill('coordination', this)">
+                Inorganic &amp; Coordination
+            </button>
 
-                <span class="tag">
-                    NacNac ligands
-                </span>
+            <button class="skills-tab"
+                onclick="showSkill('characterization', this)">
+                Characterization
+            </button>
 
-                <span class="tag">
-                    Reaction setup
-                </span>
+        </div>
 
-                <span class="tag">
-                    Purification
-                </span>
+        <!-- SKILL CONTENT CARD -->
+        <div class="skills-card">
 
-                <span class="tag">
-                    TLC
-                </span>
+            <!-- SYNTHESIS -->
+            <div id="synthesis" class="skill-content active">
 
-                <span class="tag">
-                    Column chromatography
-                </span>
+                <h3>Synthesis &amp; Lab Techniques</h3>
 
-                <span class="tag teal">
-                    NMR
-                </span>
+                <p>
+                    Organic synthesis, reaction setup,
+                    purification, TLC, column chromatography.
+                </p>
 
-                <span class="tag teal">
-                    CP/MAS NMR
-                </span>
+            </div>
 
-                <span class="tag yellow">
-                    PXRD
-                </span>
+            <!-- INORGANIC -->
+            <div id="coordination" class="skill-content">
 
-                <span class="tag yellow">
-                    DSC and TGA
-                </span>
+                <h3>Inorganic &amp; Coordination Chemistry</h3>
 
-                <span class="tag yellow">
-                    MALDI-MS
-                </span>
+                <p>
+                    Inorganic chemistry, coordination chemistry,
+                    NacNac ligands.
+                </p>
+
+            </div>
+
+            <!-- CHARACTERIZATION -->
+            <div id="characterization" class="skill-content">
+
+                <h3>Characterization Techniques</h3>
+
+                <p>
+                    NMR, CP/MAS NMR, PXRD, DSC and TGA,
+                    MALDI-MS.
+                </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- =========================

@@ -258,179 +258,157 @@
     </section>
 
 
-    <!-- =========================
-         RESEARCH
-    ========================== -->
-    <section id="research" class="content-section">
+  <!-- =========================
+     RESEARCH
+========================= -->
 
-        <div class="section-container">
+<section class="research-section" id="research">
 
-            <p class="label">
-                RESEARCH
+    <div class="research-header">
+        <p class="research-label">RESEARCH</p>
+        <h2>Research — click each project</h2>
+    </div>
+
+    <!-- PROJECT BUTTONS -->
+    <div class="research-tabs">
+
+        <button class="research-tab active"
+                onclick="showResearch('nacnac', this)">
+            NacNac Ligand Chemistry
+        </button>
+
+        <button class="research-tab"
+                onclick="showResearch('nmr', this)">
+            Seed &amp; Starch Biology
+        </button>
+
+        <button class="research-tab"
+                onclick="showResearch('topochemical', this)">
+            Topochemical Chemistry
+        </button>
+
+    </div>
+
+
+    <!-- PROJECT CARD -->
+    <div class="research-card">
+
+        <!-- NACNAC -->
+        <div class="research-project active-project" id="nacnac">
+
+            <div class="research-date">
+                2026 — PRESENT · IISER THIRUVANANTHAPURAM
+            </div>
+
+            <h3>NacNac Ligand Chemistry</h3>
+
+            <p class="research-intro">
+                Master's thesis work in organometallic chemistry focused on
+                β-diketiminate (NacNac) ligands and their coordination chemistry.
             </p>
 
-            <h2>
-                Research
-            </h2>
+            <div class="research-details">
 
-            <div class="project-list">
+                <p>
+                    <strong>Focus:</strong>
+                    Synthesis and study of NacNac ligands and their coordination
+                    with main-group and transition-metal centres.
+                </p>
 
+                <p>
+                    <strong>Current work:</strong>
+                    Synthesising NacNac ligands, characterising them, and exploring
+                    their coordination chemistry.
+                </p>
 
-                <!-- CURRENT PROJECT -->
-                <div class="project open">
-
-                    <button
-                        type="button"
-                        class="project-head"
-                        aria-expanded="true"
-                    >
-
-                        <span>
-
-                            <small class="project-year">
-                                2026–PRESENT
-                            </small>
-
-                            <h3>
-                                NacNac Ligand Chemistry
-                            </h3>
-
-                        </span>
-
-                        <i aria-hidden="true"></i>
-
-                    </button>
-
-
-                    <div class="project-body">
-
-                        <div>
-
-                            <p>
-                                I make β-diketiminate (NacNac) ligands
-                                and study how they bind to main-group
-                                and transition metals.
-                            </p>
-
-                            <p>
-                                My current work focuses on synthesising
-                                the ligands, characterising them, and
-                                understanding how NacNac frameworks
-                                coordinate.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- SEED AND STARCH -->
-                <div class="project">
-
-                    <button
-                        type="button"
-                        class="project-head"
-                        aria-expanded="false"
-                    >
-
-                        <span>
-
-                            <small class="project-year">
-                                2025–2026
-                            </small>
-
-                            <h3>
-                                Seed and Starch Biology
-                            </h3>
-
-                        </span>
-
-                        <i aria-hidden="true"></i>
-
-                    </button>
-
-
-                    <div class="project-body">
-
-                        <div>
-
-                            <p>
-                                I used NMR to characterise starch
-                                and metabolites in seeds.
-                            </p>
-
-                            <p>
-                                I worked with rice seeds using
-                                solution-state and solid-state NMR
-                                to compare metabolite profiles in
-                                control and aged seeds and to study
-                                changes in starch structure.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- TOPOCHEMICAL CHEMISTRY -->
-                <div class="project">
-
-                    <button
-                        type="button"
-                        class="project-head"
-                        aria-expanded="false"
-                    >
-
-                        <span>
-
-                            <small class="project-year">
-                                2024–2026
-                            </small>
-
-                            <h3>
-                                Topochemical Chemistry
-                            </h3>
-
-                        </span>
-
-                        <i aria-hidden="true"></i>
-
-                    </button>
-
-
-                    <div class="project-body">
-
-                        <div>
-
-                            <p>
-                                I made and characterised functional
-                                monomers for topochemical and
-                                Diels–Alder reactions.
-                            </p>
-
-                            <p>
-                                The work covered organic synthesis,
-                                purification, reaction setup, and
-                                characterisation by NMR, PXRD, DSC,
-                                TGA, IR, UV and MALDI-MS.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                <p>
+                    <strong>Area:</strong>
+                    Organometallic &amp; coordination chemistry.
+                </p>
 
             </div>
 
         </div>
 
-    </section>
 
+        <!-- NMR BIOLOGY -->
+        <div class="research-project" id="nmr">
+
+            <div class="research-date">
+                2025 — 2026 · IISER THIRUVANANTHAPURAM
+            </div>
+
+            <h3>Seed &amp; Starch Biology</h3>
+
+            <p class="research-intro">
+                NMR-based study of starch and seed metabolites to explore
+                molecular changes associated with seed biology and aging.
+            </p>
+
+            <div class="research-details">
+
+                <p>
+                    <strong>Focus:</strong>
+                    NMR-based characterization of starch and metabolites
+                    in different seed systems.
+                </p>
+
+                <p>
+                    <strong>Approach:</strong>
+                    Solid-state CP/MAS NMR and solution-state
+                    <sup>1</sup>H NMR.
+                </p>
+
+                <p>
+                    <strong>Biological system:</strong>
+                    Rice seed systems including wild-type and PIMT
+                    overexpression lines under control and aging conditions.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOPOCHEMICAL -->
+        <div class="research-project" id="topochemical">
+
+            <div class="research-date">
+                2024 — 2026 · IISER THIRUVANANTHAPURAM
+            </div>
+
+            <h3>Topochemical Chemistry</h3>
+
+            <p class="research-intro">
+                Organic synthesis and characterization of functional monomers
+                for topochemical and Diels–Alder chemistry.
+            </p>
+
+            <div class="research-details">
+
+                <p>
+                    <strong>Focus:</strong>
+                    Design and synthesis of functional organic monomers.
+                </p>
+
+                <p>
+                    <strong>Work:</strong>
+                    Amide coupling, Boc deprotection, esterification and
+                    acylation reactions.
+                </p>
+
+                <p>
+                    <strong>Characterization:</strong>
+                    NMR, PXRD, DSC, TGA, IR/UV and MALDI-MS.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- =========================
          SKILLS

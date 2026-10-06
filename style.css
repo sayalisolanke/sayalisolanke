@@ -170,6 +170,25 @@ nav {
 
 }
 
+.nav-links > a.active {
+    background: #f0e9e3;
+    color: #1d2a3a;
+
+    padding: 9px 14px;
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 12px rgba(29, 42, 58, 0.12);
+}
+
+.nav-links > a.nav-cv.active {
+    background: #1d2a3a;
+    color: white !important;
+
+    box-shadow:
+        0 7px 20px rgba(29, 42, 58, 0.30);
+}
+
 
 
 /* =====================================================
@@ -684,8 +703,8 @@ h2 {
 ========================= */
 
 .research-section {
-    padding: 100px 0;
-    max-width: 1200px;
+    padding: 120px 0;
+    width: min(1050px, 84%);
     margin: 0 auto;
 }
 
@@ -1287,30 +1306,25 @@ footer {
 
 }
 /* =====================================================
-   SKILLS SECTION
-   Same visual style as Research
+   SKILLS
 ===================================================== */
 
 .skills-tabs {
     display: flex;
-    align-items: flex-end;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 0;
+    gap: 10px;
+    margin-bottom: 24px;
 }
 
 .skills-tab {
     appearance: none;
 
     border: 2px solid #e7d8ca;
-    border-bottom: 2px solid #e7d8ca;
-
-    background: #f7f2ed;
-    color: #5e6a7c;
+    background: #fffdf9;
+    color: #202b3d;
 
     padding: 13px 20px;
-
-    border-radius: 14px 14px 0 0;
+    border-radius: 15px;
 
     font-family: inherit;
     font-size: 15px;
@@ -1318,36 +1332,22 @@ footer {
 
     cursor: pointer;
 
-    position: relative;
-    z-index: 1;
-
     transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease;
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        border-color 0.2s ease;
 }
-
-
-/* Hover */
 
 .skills-tab:hover {
-    background: #fffdf9;
-    color: #202b3d;
+    transform: translateY(-2px);
+    border-color: #202b3d;
 }
 
-
-/* Active tab */
-
 .skills-tab.active {
-    background: #fffdf9;
-    color: #202b3d;
-
-    border-color: #e7d8ca;
-    border-bottom-color: #fffdf9;
-
-    margin-bottom: -2px;
-
-    z-index: 3;
+    background: #53c9c6;
+    color: #10202c;
+    border-color: #202b3d;
 }
 
 
@@ -1360,9 +1360,7 @@ footer {
 
     background: #fffdf9;
 
-    border: 2px solid #e7d8ca;
-
-    border-radius: 0 28px 28px 28px;
+    border-radius: 28px;
 
     padding: 42px 48px;
 
@@ -1395,7 +1393,7 @@ footer {
 
 
 /* =====================================================
-   INDIVIDUAL SKILL CONTENT
+   SKILL CONTENT
 ===================================================== */
 
 .skill-content {
@@ -1407,9 +1405,7 @@ footer {
     animation: skillFade 0.3s ease;
 }
 
-
 @keyframes skillFade {
-
     from {
         opacity: 0;
         transform: translateY(6px);
@@ -1419,17 +1415,13 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-
 }
 
-
-/* Skill title */
 
 .skill-content h3 {
     font-family: Georgia, "Times New Roman", serif;
 
     font-size: 32px;
-
     line-height: 1.15;
 
     margin: 0 0 25px;
@@ -1446,17 +1438,14 @@ footer {
 
     color: #29374a;
 
-    font-size: 17px;
-
+    font-size: 18px;
     line-height: 1.8;
 }
-
 
 .skill-list li {
     margin-bottom: 8px;
     padding-left: 5px;
 }
-
 
 .skill-list li::marker {
     font-size: 0.8em;
@@ -1480,7 +1469,7 @@ footer {
 
     .skills-card {
         padding: 30px 25px;
-        border-radius: 0 22px 22px 22px;
+        border-radius: 22px;
     }
 
     .skill-content h3 {
@@ -1492,5 +1481,4 @@ footer {
         line-height: 1.7;
         padding-left: 24px;
     }
-
 }

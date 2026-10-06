@@ -54,7 +54,7 @@ a {
 ===================================================== */
 
 .nav-inner,
-.hero-inner,
+.-inner,
 .section-container {
     width: min(1100px, 88%);
     margin-left: auto;
@@ -1198,6 +1198,25 @@ footer {
         width: 90%;
     }
 
+   .phone-contact {
+    display: inline-block;
+    margin-top: -8px;
+
+    color: #1d2a3a;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #1d2a3a;
+    padding-bottom: 3px;
+
+    transition: 0.25s ease;
+}
+
+.phone-contact:hover {
+    color: #d95e6a;
+    border-color: #d95e6a;
+}
 
     /* Normal sections */
 
